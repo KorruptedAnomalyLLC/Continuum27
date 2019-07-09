@@ -8,6 +8,12 @@
 
 import Foundation
 
+struct  CommentConstants {
+    static let rextKey = "Comment"
+    static let timestampKey = "timestamp"
+    static let postReferenceKey = "post"
+}
+
 class Comment {
     
     let text: String

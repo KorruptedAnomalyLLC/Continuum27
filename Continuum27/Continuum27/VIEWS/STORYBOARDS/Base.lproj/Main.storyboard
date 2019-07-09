@@ -82,12 +82,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="R3A-4Y-bSa">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="549" id="R3A-4Y-bSa">
+                                <rect key="frame" x="0.0" y="28" width="414" height="549"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R3A-4Y-bSa" id="0JO-bo-TO5">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="548.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WaT-Yy-PEf">
+                                            <rect key="frame" x="20" y="26" width="374" height="373"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="373" id="Ruw-Pd-OwK"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="eon-2k-KcI">
+                                            <rect key="frame" x="20" y="429" width="287.5" height="72"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Caption)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8z-u3-saw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="287.5" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments: (Comment Count)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tw4-Qf-vUA">
+                                                    <rect key="frame" x="0.0" y="45.5" width="287.5" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WaT-Yy-PEf" firstAttribute="trailing" secondItem="0JO-bo-TO5" secondAttribute="trailingMargin" id="4iJ-xh-wwI"/>
+                                        <constraint firstItem="eon-2k-KcI" firstAttribute="top" secondItem="WaT-Yy-PEf" secondAttribute="bottom" constant="30" id="BaX-oA-wKe"/>
+                                        <constraint firstItem="WaT-Yy-PEf" firstAttribute="top" secondItem="0JO-bo-TO5" secondAttribute="topMargin" constant="15" id="JkB-l4-0tX"/>
+                                        <constraint firstItem="WaT-Yy-PEf" firstAttribute="leading" secondItem="eon-2k-KcI" secondAttribute="leading" id="N9P-zD-Gwl"/>
+                                        <constraint firstItem="WaT-Yy-PEf" firstAttribute="leading" secondItem="0JO-bo-TO5" secondAttribute="leadingMargin" id="WPk-Yw-6vH"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="q1c-oP-EvK" kind="show" id="Y4k-5L-VOR"/>
@@ -103,7 +135,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJj-g8-kfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="720" y="-725"/>
+            <point key="canvasLocation" x="718.84057971014499" y="-725.22321428571422"/>
         </scene>
         <!--Post Detail Table View Controller-->
         <scene sceneID="Zvs-kj-oW2">

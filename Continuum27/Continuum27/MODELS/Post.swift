@@ -10,6 +10,16 @@ import UIKit
 
 class Post {
     
+    // Magic Strings
+    struct PostConstants {
+        static let photoDataKey = "PhotoData"
+        static let timestampKey = "Timestamp"
+        static let captionKey = "Caption"
+        static let commentsKey = "Comments"
+        static let photoKey = "Photo"
+    }
+    
+    
     var photoData: Data?
     var timestamp: Date
     var caption: String
