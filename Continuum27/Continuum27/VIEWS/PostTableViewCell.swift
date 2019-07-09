@@ -9,7 +9,11 @@
 import UIKit
 
 class PostTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var postPhotoImageView: UIImageView!
+    @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var commentCountLabel: UILabel!
+    
 
     var post: Post? {
         didSet {
@@ -19,7 +23,8 @@ class PostTableViewCell: UITableViewCell {
     
     
     func updateViews() {
-        
+        postPhotoImageView.image = post?.photo
+        captionLabel.text = post?.caption
         
         
     }
