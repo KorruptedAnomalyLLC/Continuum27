@@ -19,6 +19,7 @@
 		0C8B70E022D53E2400B84F1D /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B70DF22D53E2400B84F1D /* Comment.swift */; };
 		0C8B70E222D53FA900B84F1D /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B70E122D53FA900B84F1D /* PostController.swift */; };
 		0C8B70E422D549FB00B84F1D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B70E322D549FB00B84F1D /* PostTableViewCell.swift */; };
+		0C8B70EB22D694CB00B84F1D /* SearchableRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B70EA22D694CB00B84F1D /* SearchableRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		0C8B70DF22D53E2400B84F1D /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		0C8B70E122D53FA900B84F1D /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 		0C8B70E322D549FB00B84F1D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		0C8B70EA22D694CB00B84F1D /* SearchableRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		0C8B70D222D5341400B84F1D /* CONTROLLERS */ = {
 			isa = PBXGroup;
 			children = (
+				0C8B70E922D6948D00B84F1D /* HELPERS + EXTENSIONS */,
 				0C8B70D622D5344F00B84F1D /* MODEL CONTROLLERS */,
 				0C8B70D522D5344600B84F1D /* VIEW CONTROLLERS */,
 			);
@@ -150,6 +153,14 @@
 				0C8B70E122D53FA900B84F1D /* PostController.swift */,
 			);
 			path = "MODEL CONTROLLERS";
+			sourceTree = "<group>";
+		};
+		0C8B70E922D6948D00B84F1D /* HELPERS + EXTENSIONS */ = {
+			isa = PBXGroup;
+			children = (
+				0C8B70EA22D694CB00B84F1D /* SearchableRecord.swift */,
+			);
+			path = "HELPERS + EXTENSIONS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +247,7 @@
 			files = (
 				0C8B70BB22D533AA00B84F1D /* AppDelegate.swift in Sources */,
 				0C8B70E022D53E2400B84F1D /* Comment.swift in Sources */,
+				0C8B70EB22D694CB00B84F1D /* SearchableRecord.swift in Sources */,
 				0C8B70D822D5394200B84F1D /* PostListTableViewController.swift in Sources */,
 				0C8B70E422D549FB00B84F1D /* PostTableViewCell.swift in Sources */,
 				0C8B70DC22D53A5C00B84F1D /* AddPostTableViewController.swift in Sources */,

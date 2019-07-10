@@ -21,6 +21,8 @@ class Comment {
     
     weak var post: Post?
     
+        
+    
     // Initializer
     init(text: String, timestamp: Date = Date(), post: Post) {
         self.text = text
